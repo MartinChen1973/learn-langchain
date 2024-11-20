@@ -12,6 +12,7 @@ def save_graph_image(graph, filename):
         # Construct the image path based on the given filename
         image_path = os.path.join(
             os.path.dirname(os.path.abspath(__file__)),
+            "graph_images",
             f"{os.path.splitext(filename)[0]}.png"
         )
 
