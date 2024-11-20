@@ -1,0 +1,7 @@
+{
+  "name": "Python: Run as Module",
+  "type": "python",
+  "request": "launch",
+  "module": "code.lesson04_RAG_retrieval_augmented_generation.lesson0402_search_engine",
+  "cwd": "${workspaceFolder}"
+}
