@@ -1,4 +1,4 @@
-# 1. 演示用gpt4o模型描述图片
+# 1. 演示用gpt4o模型描述图片的内容
 
 from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
@@ -34,9 +34,9 @@ def get_image_description(image_path):
 
 # List of image paths to describe
 image_paths = [
-    "src/lesson07_Multi_Modals/images/Connected.gif",
-    # "src/lesson07_Multi_Modals/images/NotConnected1.jpg",
-    # "src/lesson07_Multi_Modals/images/NotConnected2.jpg",
+    "src/lesson04_Multi_Modals/images/Connected.gif",
+    # "src/lesson04_Multi_Modals/images/NotConnected1.jpg",
+    # "src/lesson04_Multi_Modals/images/NotConnected2.jpg",
 ]
 
 # Describe each image

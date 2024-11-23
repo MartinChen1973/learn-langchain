@@ -11,7 +11,7 @@ load_dotenv(find_dotenv())
 # Prompt: create a prompt 创建提示词
 prompt = ChatPromptTemplate.from_messages([
     ("system", "You are a warm hearted AI assistant."),
-    ("user", "Make a joke about {input} in Chinese. (On in Chinese)")
+    ("user", "Make a joke about {input} in Chinese. (In Chinese)")
 ])
 
 # Model: Create the OpenAI chatbot 创建聊天机器人

@@ -94,18 +94,24 @@ TAVILY_API_KEY="tvly-请输入自己前面注册Tavily获得的KEY"
 - 使用本课程的代码，可使用一套代码访问不同的模型，只需要在 `model = ChatOpenAI(model ="gpt-4o-mini")` 切换模型的名称即可。
   - 可用模型名称见：https://agicto.com/model
 
-### 预装依赖包
+### 利用 VS Code Terminal 和 pip 安装依赖包
 
-要正确运行本课程案例，请按照以下指令安装所需的组件
+为运行项目或课程中的示例代码，可能需要安装特定的依赖包。可以使用 `pip` 命令安装这些包。在安装依赖包前，请确保已经在 VS Code 的 Terminal 中启动虚拟环境（`venv`），以避免对全局 Python 环境造成影响。
 
-**请务必按以下步骤在 vscode 的 Terminal 中安装，否则可能会因系统中存在多个 python 而导致问题！**
-
-- 打开 vs code
-- 从菜单 File / Open Folder 打开课程代码目录（课前向助教索取）
-- 菜单 Terminal / New Terminal
-- 在终端窗口，运行以下指令以自动安装所有依赖包：
-
-  `pip install -r requirements.txt`
+- **启用虚拟环境**：
+  在 VS Code Terminal 中，确保在当前项目根目录下（一般有一个 README.md）。运行
+  ```bash
+  python -m venv venv
+  .\venv\Scripts\activate
+  pip install -r requirements.txt
+  ```
+  此时会发现提示行的最前面有一个蓝色的（venv），则表示成功。
+  **⚠️ 注意 ⚠️**：每次启动项目都需要重新运行第二行。
+- **安装单个依赖包（选）**：
+  如果运行项目时提示某个模块找不到（例如 `langchain`），可以单独安装该模块：
+  ```bash
+  pip install langchain
+  ```
 
 ### 运行 Hello World
 

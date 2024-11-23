@@ -1,4 +1,4 @@
-# 1. 演示用压缩过的图片仍能精准判断图片中的内容。
+# 1. 演示用压缩过的图片仍能精准判断图片中的内容，可以有效降低费用。
 
 from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
@@ -46,8 +46,8 @@ def get_image_text(question, image_path):
 
 # List of image paths to check
 question_to_images = {
-    # "图中有人在闯红灯吗？（仅回答“是”或“否”，不要解释，不要标点符号）": "src/lesson07_Multi_Modals/images/pedestrian_jaywalking.png",
-    "图中路口有车辆在等待吗？（仅回答“是”或“否”，不要解释，不要标点符号）": "src/lesson07_Multi_Modals/images/empty_street.png",
+    "图中有人在闯红灯吗？（仅回答“是”或“否”，不要解释，不要标点符号）": "src/lesson04_Multi_Modals/images/pedestrian_jaywalking.png",
+    # "图中路口有车辆在等待吗？（仅回答“是”或“否”，不要解释，不要标点符号）": "src/lesson04_Multi_Modals/images/empty_street.png",
 }
 
 # Check network status for each image

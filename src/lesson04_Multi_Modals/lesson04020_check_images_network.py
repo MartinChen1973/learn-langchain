@@ -45,9 +45,9 @@ def check_network_status(image_text):
 
 # List of image paths to check
 image_paths = [
-    # "src/lesson07_Multi_Modals/images/Connected.gif",
-    "src/lesson07_Multi_Modals/images/NotConnected1.jpg",
-    # "src/lesson07_Multi_Modals/images/NotConnected2.jpg",
+    # "src/lesson04_Multi_Modals/images/Connected.gif",
+    "src/lesson04_Multi_Modals/images/NotConnected1.jpg",
+    # "src/lesson04_Multi_Modals/images/NotConnected2.jpg",
 ]
 
 # Check network status for each image
