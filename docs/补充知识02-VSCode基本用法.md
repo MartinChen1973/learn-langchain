@@ -46,12 +46,15 @@ VS Code 内置了 Terminal（终端），可以直接在编辑器内执行命令
 
 - **启用虚拟环境**：
   在 VS Code Terminal 中，确保在当前项目根目录下（一般有一个 README.md）。运行
+
   ```bash
   python -m venv venv
   .\venv\Scripts\activate
   ```
+
   此时会发现提示行的最前面有一个蓝色的（venv），则表示成功。
   **注意**：每次启动项目都需要重新运行第二行。
+
 - **批量安装依赖包**：
   运行
   ```bash
@@ -70,6 +73,18 @@ VS Code 提供了多种方式运行 Python 代码，以下是常用方法：
 - 打开 `.py` 文件后，点击右上角的 **Run Python File** 按钮（三角形图标）来运行代码。
 - 或者，右键点击文件并选择 **Run Python File in Terminal**（在终端中运行 Python 文件）。
 - 运行成功后，终端会显示代码输出结果。如果输出“Hello World!”等预期结果，则环境配置成功。
+
+# 7. 备份依赖文件
+
+如果想备份、或向别人转交代码，可生成本项目所需依赖的描述文件 requirements.txt。
+
+- 首先安装 pipreqs（此工具可只收集当前项目的依赖，而非本机安装过的所有依赖）
+
+`pip install pipreqs`
+
+- 运行指令生成 requirements.txt
+
+`pipreqs . --force`
 
 ### 常见问题及解决方案
 
